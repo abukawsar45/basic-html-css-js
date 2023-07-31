@@ -1,0 +1,1134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <title>Document</title>
+    <style>
+      #progressBar {
+        width: 200px;
+        height: 20px;
+        background-color: #ccc;
+        border-radius: 5px;
+        overflow: hidden;
+        cursor: pointer;
+      }
+
+      #filler {
+        height: 100%;
+        background-color: #4caf50;
+        transition: width 0.1s;
+      }
+
+      #progressValue {
+        margin-top: 5px;
+        text-align: center;
+        color: #000;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div style="position: relative">
+      <div style="margin: 4px">
+        <img style="width: 100%" src="./image/nextjs-kit.png" alt="" />
+      </div>
+      <div
+        style="
+          position: relative;
+          margin: 25px;
+          margin-top: -65px;
+          background-color: azure;
+        "
+      >
+        <div style="padding: 30px">
+          <!-- Button -->
+          <div>
+            <h1 style="color: gray">Basic Elements</h1>
+            <h2 style="color: grey">Buttons</h2>
+            <!-- Button Style -->
+            <div>
+              <p style="color: grey">Pick your style</p>
+              <div style="margin-left: 100px">
+                <button
+                  style="
+                    background-color: blueviolet;
+                    text-transform: uppercase;
+                    color: white;
+                    padding: 8px 16px;
+                    border: none;
+                    cursor: pointer;
+                    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+                  "
+                >
+                  Default
+                </button>
+                <button
+                  style="
+                    background-color: blueviolet;
+                    text-transform: uppercase;
+                    color: white;
+                    padding: 8px 16px;
+                    border: none;
+                    border-radius: 50px;
+                    cursor: pointer;
+                    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+                  "
+                >
+                  Round
+                </button>
+                <button
+                  style="
+                    background-color: blueviolet;
+                    text-transform: uppercase;
+                    color: white;
+                    padding: 8px 16px;
+                    border: none;
+                    border-radius: 50px;
+                    cursor: pointer;
+                    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+                  "
+                >
+                  <i class="fas fa-heart" style="color: white"></i> With Icon
+                </button>
+                <button
+                  style="
+                    background-color: blueviolet;
+                    text-transform: uppercase;
+                    color: white;
+                    padding: 8px;
+                    border: none;
+                    border-radius: 50%;
+                    cursor: pointer;
+                    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+                  "
+                >
+                  <i class="fas fa-heart" style="color: white"></i>
+                </button>
+                <button
+                  style="
+                    text-transform: uppercase;
+                    color: blueviolet;
+                    padding: 8px 16px;
+                    border: none;
+                    cursor: pointer;
+                  "
+                >
+                  Simple
+                </button>
+              </div>
+            </div>
+            <!-- Button Size -->
+            <div style="margin-top: 40px">
+              <p style="color: grey">Pick your size</p>
+              <div style="margin-left: 100px">
+                <button
+                  style="
+                    background-color: blueviolet;
+                    text-transform: uppercase;
+                    color: white;
+                    padding: 6px 12px;
+                    border: none;
+                    cursor: pointer;
+                    font-size: 10px;
+                    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+                  "
+                >
+                  small
+                </button>
+                <button
+                  style="
+                    background-color: blueviolet;
+                    text-transform: uppercase;
+                    color: white;
+                    padding: 8px 16px;
+                    border: none;
+                    cursor: pointer;
+                    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+                  "
+                >
+                  regular
+                </button>
+                <button
+                  style="
+                    background-color: blueviolet;
+                    text-transform: uppercase;
+                    color: white;
+                    padding: 12px 24px;
+                    border: none;
+                    cursor: pointer;
+                    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+                  "
+                >
+                  large
+                </button>
+              </div>
+            </div>
+            <!-- Button Color -->
+            <div style="margin-top: 40px">
+              <p style="color: grey">Pick your color</p>
+              <div style="margin-left: 100px">
+                <button
+                  style="
+                    background-color: darkgrey;
+                    text-transform: uppercase;
+                    color: white;
+                    padding: 8px 16px;
+                    border: none;
+                    cursor: pointer;
+                    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+                  "
+                >
+                  Default
+                </button>
+                <button
+                  style="
+                    background-color: blueviolet;
+                    text-transform: uppercase;
+                    color: white;
+                    padding: 8px 16px;
+                    border: none;
+                    cursor: pointer;
+                    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+                  "
+                >
+                  Primary
+                </button>
+                <button
+                  style="
+                    background-color: deepskyblue;
+                    text-transform: uppercase;
+                    color: white;
+                    padding: 8px 16px;
+                    border: none;
+                    cursor: pointer;
+                    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+                  "
+                >
+                  info
+                </button>
+                <button
+                  style="
+                    background-color: forestgreen;
+                    text-transform: uppercase;
+                    color: white;
+                    padding: 8px 16px;
+                    border: none;
+                    cursor: pointer;
+                    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+                  "
+                >
+                  success
+                </button>
+                <button
+                  style="
+                    background-color: darkorange;
+                    text-transform: uppercase;
+                    color: white;
+                    padding: 8px 16px;
+                    border: none;
+                    cursor: pointer;
+                    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+                  "
+                >
+                  warning
+                </button>
+                <button
+                  style="
+                    background-color: orangered;
+                    text-transform: uppercase;
+                    color: white;
+                    padding: 8px 16px;
+                    border: none;
+                    cursor: pointer;
+                    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+                  "
+                >
+                  danger
+                </button>
+                <button
+                  style="
+                    background-color: crimson;
+                    text-transform: uppercase;
+                    color: white;
+                    padding: 8px 16px;
+                    border: none;
+                    cursor: pointer;
+                    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+                  "
+                >
+                  rose
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- Input Field -->
+          <div style="margin-top: 30px">
+            <h2 style="color: grey">Inputs</h2>
+            <div>
+              <input
+                style="
+                  border: none;
+                  border-bottom: 1px solid gray;
+                  color: gray;
+
+                  padding: 1px 2px;
+                  line-height: 1.5;
+                  outline: none;
+                "
+                type="text"
+                placeholder="Regular"
+              />
+              <input
+                style="
+                  border: none;
+                  border-bottom: 1px solid gray;
+                  color: gray;
+                  padding: 1px 2px;
+                  line-height: 1.5;
+                  outline: none;
+                "
+                type="text"
+                placeholder="With floating label"
+              />
+              <input
+                style="
+                  border: none;
+                  border-bottom: 1px solid gray;
+                  color: green;
+                  padding: 1px 2px;
+                  line-height: 1.5;
+                  outline: none;
+                "
+                type="text"
+                placeholder="Success input"
+              />
+              <input
+                style="
+                  border: none;
+                  border-bottom: 1px solid gray;
+                  color: red;
+                  padding: 1px 2px;
+                  line-height: 1.5;
+                  outline: none;
+                "
+                type="text"
+                placeholder="Error input"
+              />
+
+              <div style="margin-top: 20px; display: flex">
+                <div style="position: relative">
+                  <input
+                    style="
+                      border: none;
+                      border-bottom: 1px solid gray;
+                      color: gray;
+                      padding: 1px 2px;
+                      line-height: 1.5;
+                      outline: none;
+                    "
+                    type="text"
+                    placeholder="With material icons"
+                  />
+                  <span
+                    style="
+                      position: absolute;
+                      left: 145px;
+                      top: 0;
+                      color: gray;
+                      cursor: pointer;
+                    "
+                    class="material-symbols-outlined"
+                  >
+                    view_cozy
+                  </span>
+                </div>
+                <div style="position: relative">
+                  <input
+                    style="
+                      border: none;
+                      border-bottom: 1px solid gray;
+                      color: gray;
+                      padding: 1px 2px;
+                      line-height: 1.5;
+                      outline: none;
+                    "
+                    type="text"
+                    placeholder="With Font Awesome Icons"
+                  />
+                  <span
+                    style="
+                      position: absolute;
+                      left: 160px;
+                      top: 0;
+                      color: gray;
+                      cursor: pointer;
+                      margin: 0, auto;
+                    "
+                    class="input-group-text"
+                  >
+                    <i class="fas fa-user"></i>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div style="margin-top: 30px; display: flex; gap: 120px">
+            <!-- Check Box -->
+            <div>
+              <h2 style="color: grey">Checkboxes</h2>
+              <div style="display: flex; align-items: center">
+                <input
+                  type="checkbox"
+                  style="
+                    width: 18px;
+                    height: 18px;
+                    border: 1px solid #000;
+                    display: inline-block;
+                    background-color: #fff;
+                  "
+                  name=""
+                  id=""
+                  value=""
+                />
+                <label style="color: darkgray">Unchacked</label>
+              </div>
+              <div style="display: flex; align-items: center">
+                <input
+                  type="checkbox"
+                  style="
+                    width: 18px;
+                    height: 18px;
+                    border: 1px solid #000;
+                    display: inline-block;
+                    background-color: #fff;
+                  "
+                  name=""
+                  id=""
+                  value=""
+                  checked
+                />
+                <label style="color: darkgray">Chacked</label>
+              </div>
+              <div style="display: flex; align-items: center">
+                <input
+                  type="checkbox"
+                  disabled
+                  style="
+                    width: 18px;
+                    height: 18px;
+                    border: 1px solid #000;
+                    display: inline-block;
+                    background-color: #fff;
+                  "
+                  name=""
+                  id=""
+                  value=""
+                />
+                <label style="color: darkgray">Unchacked</label>
+              </div>
+              <div style="display: flex; align-items: center">
+                <input
+                  type="checkbox"
+                  disabled
+                  style="
+                    width: 18px;
+                    height: 18px;
+                    border: 1px solid #000;
+                    display: inline-block;
+                    background-color: #fff;
+                  "
+                  name=""
+                  id=""
+                  value=""
+                />
+                <label style="color: darkgray">Chacked</label>
+              </div>
+            </div>
+            <!-- Radio Buttons -->
+            <div>
+              <h2 style="color: grey">Radio Buttons</h2>
+              <div>
+                <input type="radio" name="first" id="" />
+                <label style="color: darkgray">First Radio</label><br />
+                <input type="radio" name="first" id="" />
+                <label style="color: darkgray">Second Radio</label><br />
+                <input type="radio" disabled name="first" id="" />
+                <label style="color: darkgray">Disabled Unchecked Radio</label
+                ><br />
+                <input type="radio" name="first" id="" checked disabled />
+                <label style="color: darkgray">Disabled Checked Radio</label
+                ><br />
+              </div>
+            </div>
+            <!-- Toggle Buttons -->
+            <div>
+              <h2 style="color: grey">Toggle Buttons</h2>
+              <div>
+                <label
+                  id="label1"
+                  style="
+                    display: inline-block;
+                    width: 60px;
+                    height: 34px;
+                    background-color: #2196f3;
+                    border-radius: 34px;
+                    cursor: pointer;
+                    position: relative;
+                  "
+                >
+                  <input
+                    type="checkbox"
+                    onclick="document.getElementById('slider').style.left = document.getElementById('slider').style.left === '4px' ? '30px' : '4px'; document.getElementById('byDefaultOn').innerText = document.getElementById('slider').style.left === '4px' ? 'Toggle is off' : 'Toggle is on';document.getElementById('label1').style.backgroundColor = document.getElementById('slider').style.left === '4px'?'#ccc' : '#2196f3'"
+                    style="opacity: 0; width: 0; height: 0"
+                  />
+                  <span
+                    id="slider"
+                    style="
+                      position: absolute;
+                      cursor: pointer;
+                      top: 4px;
+                      left: 4px;
+                      width: 26px;
+                      height: 26px;
+                      background-color: white;
+                      border-radius: 50%;
+                      transition: 0.4s;
+                      left: 30px;
+                    "
+                  ></span>
+                  <label
+                    style="
+                      position: absolute;
+                      margin-left: 60px;
+                      color: darkgray;
+                    "
+                    id="byDefaultOn"
+                  >
+                    Toggle is on
+                  </label>
+                </label>
+
+                <br />
+                <br />
+                <label
+                  id="label2"
+                  style="
+                    display: inline-block;
+                    width: 60px;
+                    height: 34px;
+                    background-color: #ccc;
+                    border-radius: 34px;
+                    cursor: pointer;
+                    position: relative;
+                  "
+                >
+                  <input
+                    type="checkbox"
+                    onclick="document.getElementById('slider2').style.left = document.getElementById('slider2').style.left === '4px' ? '30px' : '4px'; document.getElementById('byDefaultOn2').innerText = document.getElementById('slider2').style.left === '4px' ? 'Toggle is off' : 'Toggle is on';document.getElementById('label2').style.backgroundColor = document.getElementById('slider2').style.left === '4px'?'#ccc' : '#2196f3'"
+                    style="opacity: 0; width: 0; height: 0"
+                  />
+                  <span
+                    id="slider2"
+                    style="
+                      position: absolute;
+                      cursor: pointer;
+                      top: 4px;
+                      left: 4px;
+                      width: 26px;
+                      height: 26px;
+                      background-color: white;
+                      border-radius: 50%;
+                      transition: 0.4s;
+                    "
+                  ></span>
+                  <label
+                    style="
+                      position: absolute;
+                      margin-left: 60px;
+                      color: darkgray;
+                    "
+                    id="byDefaultOn2"
+                  >
+                    Toggle is off
+                  </label>
+                </label>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div style="display: flex; gap: 60px">
+              <!-- Progress Bars -->
+              <div>
+                <h2 style="color: grey">Progrees Bars</h2>
+                <div>
+                  <progress
+                    id="progress1"
+                    value="25"
+                    max="100"
+                    style="width: 200px; height: 12px"
+                  ></progress>
+                </div>
+                <div>
+                  <progress
+                    id="progress2"
+                    value="50"
+                    max="100"
+                    style="width: 200px; height: 12px"
+                  ></progress>
+                </div>
+                <div>
+                  <progress
+                    id="progress3"
+                    value="75"
+                    max="100"
+                    style="width: 200px; height: 12px"
+                  ></progress>
+                </div>
+              </div>
+              <!-- pagination -->
+              <div>
+                <h2 style="color: grey">Pagination</h2>
+                <div>
+                  <button
+                    style="
+                      padding: 8px, 16px;
+                      border-radius: 50%;
+                      margin-left: 2px;
+                    "
+                    onclick="setActiveButton(this)"
+                  >
+                    1
+                  </button>
+                  <button
+                    style="
+                      padding: 8px, 16px;
+                      border-radius: 50%;
+                      margin-left: 2px;
+                    "
+                    onclick="setActiveButton(this)"
+                  >
+                    2
+                  </button>
+                  <button
+                    style="
+                      padding: 8px, 16px;
+                      border-radius: 50%;
+                      margin-left: 2px;
+                    "
+                    onclick="setActiveButton(this)"
+                  >
+                    3
+                  </button>
+                  <button
+                    style="
+                      padding: 8px, 16px;
+                      border-radius: 50%;
+                      margin-left: 2px;
+                    "
+                    onclick="setActiveButton(this)"
+                  >
+                    4
+                  </button>
+                  <button
+                    style="
+                      padding: 8px, 16px;
+                      border-radius: 50%;
+                      margin-left: 2px;
+                    "
+                    onclick="setActiveButton(this)"
+                  >
+                    5
+                  </button>
+                  <button
+                    style="
+                      padding: 8px, 16px;
+                      border-radius: 50%;
+                      margin-left: 2px;
+                    "
+                    onclick="setActiveButton(this)"
+                  >
+                    6
+                  </button>
+                  <button
+                    style="
+                      padding: 8px, 16px;
+                      border-radius: 50%;
+                      margin-left: 2px;
+                    "
+                    onclick="setActiveButton(this)"
+                  >
+                    7
+                  </button>
+                  <button
+                    style="
+                      padding: 8px, 16px;
+                      border-radius: 50%;
+                      margin-left: 2px;
+                    "
+                    onclick="setActiveButton(this)"
+                  >
+                    8
+                  </button>
+                  <button
+                    style="
+                      padding: 8px, 16px;
+                      border-radius: 50%;
+                      margin-left: 2px;
+                    "
+                    onclick="setActiveButton(this)"
+                  >
+                    9
+                  </button>
+                  <button
+                    style="
+                      padding: 8px, 16px;
+                      border-radius: 50%;
+                      margin-left: 2px;
+                    "
+                    onclick="setActiveButton(this)"
+                  >
+                    10
+                  </button>
+                </div>
+                <div style="margin-top: 15px">
+  <button
+    style="
+      padding: 8px 16px;
+      border: none;
+      border-radius: 25%;
+      margin-left: 2px;
+    "
+    onclick="prevPage()"
+  >
+    prev
+  </button>
+  <button
+    id="page1"
+    style="
+      padding: 8px 16px;
+      border-radius: 50%;
+      margin-left: 2px;
+    "
+    onclick="gotoPage(1)"
+  >
+    1
+  </button>
+  <button
+    id="page2"
+    style="
+      padding: 8px 16px;
+      border-radius: 50%;
+      margin-left: 2px;
+    "
+    onclick="gotoPage(2)"
+  >
+    2
+  </button>
+  <button
+    id="page3"
+    style="
+      padding: 8px 16px;
+      border-radius: 50%;
+      margin-left: 2px;
+    "
+    onclick="gotoPage(3)"
+  >
+    3
+  </button>
+  <button
+    id="page4"
+    style="
+      padding: 8px 16px;
+      border-radius: 50%;
+      margin-left: 2px;
+    "
+    onclick="gotoPage(4)"
+  >
+    4
+  </button>
+  <button
+    id="page5"
+    style="
+      padding: 8px 16px;
+      border-radius: 50%;
+      margin-left: 2px;
+    "
+    onclick="gotoPage(5)"
+  >
+    5
+  </button>
+
+  <button
+    style="
+      padding: 8px 16px;
+      border: none;
+      border-radius: 25%;
+      margin-left: 2px;
+    "
+    onclick="nextPage()"
+  >
+    next
+  </button>
+</div>
+              </div>
+            
+            </div>
+            <div style="display: flex; gap: 60px">
+              <!-- sliders -->
+              <div>
+                <h2 style="color: grey">Sliders</h2>
+                <div>
+                  <input
+                    type="range"
+                    id="slider"
+                    min="0"
+                    max="100"
+                    value="25"
+                    style="width: 200px"
+                    oninput="updateProgress()"
+                  />
+                </div>
+                <div>
+                  <input
+                    type="range"
+                    id="slider"
+                    min="0"
+                    max="100"
+                    value="25"
+                    style="width: 200px"
+                    oninput="updateProgress()"
+                  />
+                </div>
+                
+              </div>
+              <!-- Badges -->
+              <div>
+                <h2 style="color: gray">Badges</h2>
+                <div style="">
+                  <button
+                    style="
+                      background-color: darkgrey;
+                      text-transform: uppercase;
+                      color: white;
+                      padding: 4px 12px;
+                      border: none;
+                      border-radius: 25px;
+                      font-size: 12px;
+                      cursor: pointer;
+                      box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+                    "
+                  >
+                    Default
+                  </button>
+                  <button
+                    style="
+                      background-color: blueviolet;
+                      text-transform: uppercase;
+                      color: white;
+                      padding: 4px 12px;
+                      border: none;
+                      border-radius: 25px;
+                      font-size: 12px;
+                      cursor: pointer;
+                      box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+                    "
+                  >
+                    Primary
+                  </button>
+                  <button
+                    style="
+                      background-color: deepskyblue;
+                      text-transform: uppercase;
+                      color: white;
+                      padding: 4px 12px;
+                      border: none;
+                      border-radius: 25px;
+                      font-size: 12px;
+                      cursor: pointer;
+                      box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+                    "
+                  >
+                    info
+                  </button>
+                  <button
+                    style="
+                      background-color: forestgreen;
+                      text-transform: uppercase;
+                      color: white;
+                      padding: 4px 12px;
+                      border: none;
+                      border-radius: 25px;
+                      font-size: 12px;
+                      cursor: pointer;
+                      box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+                    "
+                  >
+                    success
+                  </button>
+                  <button
+                    style="
+                      background-color: darkorange;
+                      text-transform: uppercase;
+                      color: white;
+                      padding: 4px 12px;
+                      border: none;
+                      border-radius: 25px;
+                      font-size: 12px;
+                      cursor: pointer;
+                      box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+                    "
+                  >
+                    warning
+                  </button>
+                  <button
+                    style="
+                      background-color: orangered;
+                      text-transform: uppercase;
+                      color: white;
+                      padding: 4px 12px;
+                      border: none;
+                      border-radius: 25px;
+                      font-size: 12px;
+                      cursor: pointer;
+                      box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+                    "
+                  >
+                    danger
+                  </button>
+                  <button
+                    style="
+                      background-color: crimson;
+                      text-transform: uppercase;
+                      color: white;
+                      padding: 4px 12px;
+                      border: none;
+                      border-radius: 25px;
+                      font-size: 12px;
+                      cursor: pointer;
+                      box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+                    "
+                  >
+                    rose
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div style="display: flex; gap: 60px">
+              <!-- Menu -->
+              <div>
+                <h2 style="color: grey">Menu</h2>
+                <div
+                  style="
+                    background-color: blueviolet;
+                    width: 100%;
+                    padding: 0 20px;
+                    gap: 20px;
+                    height: 80px;
+                    display: flex;
+                    justify-self: center;
+                    align-items: center;
+                  "
+                >
+                  <a
+                    style="color: #fff; text-decoration: none; font-size: 24px"
+                    href="#"
+                    >Menu</a
+                  >
+                  <a style="color: #fff; text-decoration: none" href="#"
+                    >Link</a
+                  >
+                  <a style="color: #fff; text-decoration: none" href="#"
+                    >Link</a
+                  >
+
+                  <!-- Dropdown Start -->
+                  <div style="position: relative">
+                    <a
+                      id="dropdownToggle"
+                      style="
+                        color: #fff;
+                        text-decoration: none;
+                        cursor: pointer;
+                      "
+                      onclick="toggleDropdown()"
+                      >Dropdown</a
+                    >
+                    <ul
+                      id="dropdownMenu"
+                      style="
+                        display: none;
+                        position: absolute;
+                        top: 100%;
+                        left: 0;
+                        background-color: blueviolet;
+                        padding: 10px;
+                        list-style: none;
+                      "
+                    >
+                      <li>
+                        <a style="color: #fff; text-decoration: none" href="#"
+                          >Dropdown Item 1</a
+                        >
+                      </li>
+                      <li>
+                        <a style="color: #fff; text-decoration: none" href="#"
+                          >Dropdown Item 2</a
+                        >
+                      </li>
+                      <li>
+                        <a style="color: #fff; text-decoration: none" href="#"
+                          >Dropdown Item 3</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                  <!-- Dropdown End -->
+                </div>
+              </div>
+              <!-- Menu with icons -->
+              <!-- <div>
+                <h2 style="color: gray">Menu with Icons</h2>
+                <div
+                  style="
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    background-color: #2196f3;
+                    width: 100%;
+                    padding: 0 20px;
+                    gap: 20px;
+                    height: 80px;
+                  "
+                >
+                  <div>
+                    <h3 style="color: #fff">Icons</h3>
+                  </div>
+                  <div>
+                    <a style="color: #fff; text-decoration: none" href="#"
+                      >Link</a
+                    >
+                    <a style="color: #fff; text-decoration: none" href="#"
+                      >Link</a
+                    >
+
+                    <!-- Dropdown Start -->
+                    <div style="position: relative">
+                      <a
+                        id="dropdownToggle"
+                        style="
+                          color: #fff;
+                          text-decoration: none;
+                          cursor: pointer;
+                        "
+                        onclick="toggleDropdown()"
+                        >Dropdown</a
+                      >
+                      <ul
+                        id="dropdownMenu"
+                        style="
+                          display: none;
+                          position: absolute;
+                          top: 100%;
+                          left: 0;
+                          background-color: blueviolet;
+                          padding: 10px;
+                          list-style: none;
+                        "
+                      >
+                        <li>
+                          <a style="color: #fff; text-decoration: none" href="#"
+                            >Dropdown Item 1</a
+                          >
+                        </li>
+                        <li>
+                          <a style="color: #fff; text-decoration: none" href="#"
+                            >Dropdown Item 2</a
+                          >
+                        </li>
+                        <li>
+                          <a style="color: #fff; text-decoration: none" href="#"
+                            >Dropdown Item 3</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      // Pagination1
+       let activeButton = null;
+
+  function setActiveButton(button) {
+    // Remove active class from the previous active button
+    if (activeButton) {
+      activeButton.style.backgroundColor = "#ccc";
+    }
+
+    // Set the new active button and change its background color
+    activeButton = button;
+    activeButton.style.backgroundColor = "blueviolet";
+
+    // Get the page number of the clicked button (optional: you can use this value as needed)
+    const pageNumber = parseInt(activeButton.textContent);
+    console.log("Page Number:", pageNumber);
+  }
+
+      // pagingation2
+      let currentPage = 1;
+
+  function prevPage() {
+    if (currentPage > 1) {
+      currentPage--;
+    }
+    updatePageButtons();
+  }
+
+  function nextPage() {
+    if (currentPage < 10) {
+      currentPage++;
+    }
+    updatePageButtons();
+  }
+
+  function gotoPage(page) {
+    currentPage = page;
+    updatePageButtons();
+  }
+
+  function updatePageButtons() {
+    for (let i = 1; i <= 10; i++) {
+      const button = document.getElementById("page" + i);
+      if (i === currentPage) {
+        button.style.backgroundColor = "blueviolet";
+      } else {
+        button.style.backgroundColor = "#ccc";
+      }
+    }
+  }
+
+  // Initialize the buttons
+  updatePageButtons();
+    </script>
+  </body>
+</html>
